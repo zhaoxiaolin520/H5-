@@ -38,16 +38,17 @@ export default {
     box-sizing: border-box;
     outline: 0;
   }
-  html, body {
-    height: 100%;
-  }
   body {
     overflow: hidden;
+  }
+  html, body {
+    height: 100%;
   }
   #app {
     height: 100%;
   }
   .main {
     height: 100%;
+    background: skyblue;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="page1">
+    <div class="page2">
         <ul class="nav">
             <li v-for="v in list" @click="change(v.url)" :class="{active: $route.path.indexOf(v.url) != -1}">{{v.text}}</li>
         </ul>
@@ -39,7 +39,11 @@
 </script>
 
 <style lang="scss">
+    .page2 {
+        width: 100%;
+    }
     #page {
+        margin-bottom: 2rem;
         -webkit-animation: slide .5s linear 0s 1;
         -o-animation: slide .5s linear 0s 1;
         animation: slide .5s linear 0s 1;

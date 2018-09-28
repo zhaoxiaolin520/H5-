@@ -20,10 +20,13 @@
 </template>
 
 <script>
+    import $ from 'jquery'
     export default {
         methods: {
             UP() {
                 this.$emit('myEvent',true);
+                $('body').css('overflow','scroll');
+                $('.main').css('height','auto')
             }
         }
     }
